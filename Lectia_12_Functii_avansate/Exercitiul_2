@@ -1,0 +1,14 @@
+# Tema pentru acasă - Lecția 5.2 Funcții: Parametri și Argumente
+
+"""
+Task: Creați o funcție cu numele "task_2" care calculează pretul total pentru o comandă.
+Funcția primește: pretul_unitar (obligatoriu), cantitate (default 1), reducere_procent (default 0).
+Să returneze: pret_unitar * cantitate * (1 - reducere_procent/100)
+Exemplu: task_2(100) -> 100.0
+         task_2(100, 3) -> 300.0  
+         task_2(100, 2, 10) -> 180.0
+"""
+
+# CODUL TĂU VINE MAI JOS:
+
+# CODUL TĂU VINE MAI SUS:
