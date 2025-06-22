@@ -1,0 +1,11 @@
+# Return multiple în aceeași linie
+def calcule_matematice(a, b):
+    """Returnează multiple valori ca tuplu"""
+    suma = a + b
+    diferenta = a - b
+    produs = a * b
+    return suma, diferenta, produs  # Returnează tuplu
+
+print("\n2. Return multiple:")
+s, d, p = calcule_matematice(10, 3)     # ??? Cum se deduce ca a, d, p = suma, diferenta, produs?
+print(f"Suma: {s}, Diferența: {d}, Produsul: {p}") 
