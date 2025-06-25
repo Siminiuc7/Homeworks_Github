@@ -1,0 +1,21 @@
+"""
+Task: Creați o funcție lambda cu numele "task_4" care calculează pătratul unui număr.
+Apoi creați o funcție cu numele "test_task_4" care aplică lambda-ul pe o listă de numere.
+Exemplu: test_task_4([1, 2, 3, 4]) -> [1, 4, 9, 16]
+"""
+
+# CODUL TĂU VINE MAI JOS:
+
+print("\n===Exercitiul_4===")
+
+numere = [1, 2, 3, 4, 5]
+
+task_4 = lambda elem: elem **2
+test_task_4 = list(map(lambda elem: elem **2, numere))
+
+print(f"Numerele initiale:", numere)
+print(f"Numerele la patrat:", test_task_4)
+
+
+# CODUL TĂU VINE MAI SUS:
+
