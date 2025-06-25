@@ -1,0 +1,18 @@
+"""
+Task: Creați o funcție cu numele "task_5" care folosește map() și o funcție lambda 
+pentru a converti o listă de temperature din Celsius în Fahrenheit.
+Formula: F = C * 9/5 + 32
+Exemplu: task_5([0, 20, 30]) -> [32.0, 68.0, 86.0]
+"""
+
+# CODUL TĂU VINE MAI JOS:
+
+print("\n===Exercitiul_2")
+temperatura_celsius = [0, 20, 30]
+
+temperatura_fahrenheit = list(map(lambda C: C * 9/5 + 32, temperatura_celsius))
+
+print(f"Valorile teperaturii in °C sunt:", temperatura_celsius)
+print(f"Valorile transformate in fahrenheit sunt:", temperatura_fahrenheit)
+
+# CODUL TĂU VINE MAI SUS:
