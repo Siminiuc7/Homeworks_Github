@@ -1,0 +1,19 @@
+
+"""
+Task: Creați o funcție cu numele "task_6" care folosește filter() și o funcție lambda 
+pentru a filtra doar numerele pare dintr-o listă.
+Exemplu: task_6([1, 2, 3, 4, 5, 6]) -> [2, 4, 6]
+"""
+
+# CODUL TĂU VINE MAI JOS:
+
+print("\n===Exercitiul_6")
+
+lista_numere = [1, 2, 3, 4, 5, 6]
+lista_numere_pare = list(filter(lambda x: x % 2 == 0, lista_numere))
+
+print(f"Lista numerilor:", lista_numere)
+print(f"Lista numerilor pare:", lista_numere_pare)
+
+
+# CODUL TĂU VINE MAI SUS:
