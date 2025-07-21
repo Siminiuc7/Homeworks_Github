@@ -55,6 +55,7 @@ def create_line_plot():
     # 📖 Vezi: https://www.w3schools.com/python/matplotlib_pyplot.asp
     
     plt.figure(figsize=(8, 6))
+    plt.show
 
     # TODO 2: Creează plot-ul cu linii
     # INSTRUCȚIUNI: Folosește plt.plot() pentru a desena liniile
@@ -67,7 +68,7 @@ def create_line_plot():
     # 📖 Vezi: https://www.w3schools.com/python/matplotlib_line.asp
     
     plt.plot(x, y, color='blue', marker='o', linewidth=2, markersize=8)
-
+    plt.show
 
     # TODO 3: Adaugă titlu, labels și grid
     # INSTRUCȚIUNI: Personalizează graficul
