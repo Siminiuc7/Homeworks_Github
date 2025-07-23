@@ -60,4 +60,3 @@ plt.grid(True)
 
 plt.savefig('line_plot.png', dpi=300, bbox_inches='tight')
 plt.show()
-    
