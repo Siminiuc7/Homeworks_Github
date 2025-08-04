@@ -54,6 +54,7 @@ print(f"\nExercitiul 2: Citirea unui fișier")
 # TODO: Deschide fișierul 'info_personal.txt' pentru citire
 f = open("info_personal.txt", "r")
 
+
 # TODO: Citește conținutul și salvează-l într-o variabilă
 continut = f.read()
 
