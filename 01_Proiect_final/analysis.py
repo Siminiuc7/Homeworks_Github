@@ -75,5 +75,5 @@ print(f"\n-> Pasul_2: Vizualizarea Datelor pe o harta statica si interactiva") #
 
 
 print()
-print(f"\n-> Pasul_3: Coparatia ") # generare intr-un alt file aparte
+print(f"\n-> Pasul_3: Comparatia cu alte state europene") # generare intr-un alt file aparte
 
