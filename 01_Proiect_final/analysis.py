@@ -1,4 +1,5 @@
 import pandas as pd
+import geopandas as gpd
 import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
@@ -7,7 +8,7 @@ import os
 
 print(f"\nProiectul final 'Dezvoltarea economica versus Energia regenerabila in Germania'")
 
-print(f"\n-> Pasul_1: Încarea datelor csv cu date la nivelul Germaniei si Europei, geogson (Germ, Europa) plus definirea paletei coloristice") 
+print(f"\n-> Pasul_1.1: Încarea datelor csv cu date la nivelul Germaniei si Europei, geogson (Germ, Europa) plus definirea paletei coloristice") 
 
 df = pd.read_csv("C:/01_Rodica/Python/Homeworks_Github/01_Proiect_final/energie_si_economie_germania.csv")
 
@@ -30,22 +31,22 @@ palette = {"Baden-Wuerttemberg": "#1f77b4",
     "Thueringen": "#000000"}
 
 print()
-print(f"\n-> Pasul_2: Afișarea primeleor rânduri din Tabela")
+print(f"\n-> Pasul_1.2: Afișarea primeleor rânduri din Tabela")
 print()
 print(df.head())
 
 print()
-print(f"\n -> Pasul_3: Afisarea datelor statistice descriptive") 
+print(f"\n -> Pasul_1.3: Afisarea datelor statistice descriptive") 
 print()
 print(df.describe())
 
 print()
-print(f"\n-> Pasul_4: Corelațiile între variabile")
+print(f"\n-> Pasul_1.4: Corelațiile între variabile")
 print("\nCorelații:")
 print(df.corr(numeric_only=True))
 
 print()
-print(f"\n-> Pasul_5: Executarea Scatterplot: PIB vs energie regenerabilă")
+print(f"\n-> Pasul_1.5: Executarea Scatterplot: PIB vs energie regenerabilă")
 plt.figure(figsize=(12, 6))
 sns.scatterplot(data=df, x="PIB_capita", y="Energie_regenerabila_pct", hue="Land", palette= palette)
 plt.title("PIB per capita vs Energie regenerabilă (%)", fontsize = 15)
@@ -63,16 +64,16 @@ plt.savefig("Grafic.png")
 plt.show()
 
 print()
-print(f"\n-> Pasul_6: Afisarea corelatiilo cu ajutorul Heatmap")
+print(f"\n-> Pasul_1.6: Afisarea corelatiilo cu ajutorul Heatmap")
 sns.heatmap(df.corr(numeric_only=True), annot=True, cmap="YlGnBu")
 plt.title("Matricea corelațiilor")
 plt.tight_layout()
 plt.show()
 
 print()
-print(f"\n-> Pasul_7: Vizualizarea Datelor pe o harta statica")
+print(f"\n-> Pasul_2: Vizualizarea Datelor pe o harta statica si interactiva") # generare intr-un alt file aparte
 
 
 print()
-print(f"\n-> Pasul_8: Vizualizarea Datelor pe o harta interactiva")
+print(f"\n-> Pasul_3: Coparatia ") # generare intr-un alt file aparte
 
