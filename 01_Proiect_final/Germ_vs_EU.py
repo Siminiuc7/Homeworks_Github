@@ -10,7 +10,7 @@ df_eu = pd.read_csv(csv_path)
 
 print(df_eu.head())
 
-# Elabirarea personalizată a paletei cu 26 culori distincte
+# Elaborarea personalizată a paletei cu 26 culori distincte
 culori_26 = [
     "#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd", "#8c564b",
     "#e377c2", "#7f7f7f", "#bcbd22", "#17becf", "#393b79", "#637939",
@@ -20,7 +20,7 @@ culori_26 = [
 ]
 
 # Pasul_3.2_Crearea scatterplot PIB per capita vs Energie regenerabila
-plt.figure(figsize=(12, 6))
+plt.figure(figsize=(12, 7))
 sns.scatterplot(
     data=df_eu,
     x="PIB_per_capita_EUR",
@@ -32,18 +32,24 @@ sns.scatterplot(
 
 # Pasul_3.3_Evidentiem Germania
 germany = df_eu[df_eu["Tara"] == "Germania"]
-plt.scatter(germany["PIB_per_capita_EUR"], germany["Energie_regenerabila_pct"], color="red", label="Germania", s=150)
+plt.scatter(germany["PIB_per_capita_EUR"], germany["Energie_regenerabila_pct"], color="red", s=150)
 
 plt.title("PIB per capita vs Energie regenerabila (%) in Europa", fontsize=14)
 plt.xlabel("PIB per capita (EUR)", fontsize=12)
 plt.ylabel("Energie regenerabila (%)", fontsize=12)
 plt.grid(True, linestyle="--", alpha=0.5)
 plt.legend(bbox_to_anchor=(1.05, 1), loc="upper left")
+plt.ylim(0, 80)
+plt.xlim(0, 120000)
 plt.tight_layout()
+plt.grid(True, linestyle='-', linewidth=0.8, alpha=0.7)
+plt.xlim(0, 120000)
+plt.legend(bbox_to_anchor=(1.01, 1), loc='upper left')
 plt.savefig("Grafic.png") 
 plt.show()
 
 """
+Facultativ (pentru mine)
 # Pasul_3.4_Crearea Graficului: PIB per capita
 plt.figure(figsize=(14, 6))
 df_sorted_pib = df_eu.sort_values(by="PIB_per_capita_EUR", ascending=False)
