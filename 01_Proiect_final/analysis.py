@@ -53,7 +53,7 @@ plt.title("PIB per capita vs Energie regenerabilă (%)", fontsize = 15)
 plt.xlabel("PIB per capita (EUR)", fontsize = 12)
 plt.ylabel("Energie regenerabilă (%)", fontsize = 12)
 plt.xticks(rotation=45)
-plt.xlim(25000, 60000)
+plt.xlim(0, 800000)
 plt.tick_params(axis='x', labelsize=10, colors='dimgray')
 plt.tick_params(axis='y', labelsize=10, colors='dimgray')
 plt.grid(True)
@@ -77,3 +77,6 @@ print(f"\n-> Pasul_2: Vizualizarea Datelor pe o harta statica si interactiva") #
 print()
 print(f"\n-> Pasul_3: Comparatia cu alte state europene") # generare intr-un alt file aparte
 
+
+print()
+print(f"\n-> Pasul_4: Generarea uniu fisier general main.py de unde se ruleaza tot codul") # generare intr-un alt file aparte
